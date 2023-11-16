@@ -1,1 +1,162 @@
+*{
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: hsl(236, 100%, 87%);
+}
+body{
+  background-color: hsl(226, 43%, 10%);
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 100px auto;
+  column-gap: 20px;
+  max-width: 900px;
+}
+.profile-container{
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 75px;
+  gap: 20px;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+}
+.profile img{
+  width: 60px;
+  border: 3px solid hsl(236, 100%, 87%);
+  border-radius: 50%;
+}
+p{
+  font-size: 14px;
+}
+h1{
+  font-weight: normal;
+}
+.period{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+h2{
+  font-weight: normal;
+  font-size: 18px;
+  color: hsl(235, 45%, 61%);
+  text-transform: capitalize;
+}
+h2:hover{
+  cursor: pointer;
+  color: hsl(236, 100%, 87%);
+}
+h2.active{
+  color: white;
+}
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.container{
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50px;
+}
+.content{
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.content:hover{
+  cursor: pointer;
+  background-color: hsl(235, 27%, 25%);
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h3{
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+.time{
+  display: flex;
+  flex-direction: column;
+}
+h4{
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+}
+.orange, .work{
+  background-color: hsl(15, 100%, 70%);
+  background-image: url('./images/icon-work.svg');
+}
+.light-blue, .play{
+  background-color: hsl(195, 74%, 62%);
+  background-image: url('./images/icon-play.svg');
+}
+.red, .study{
+  background-color: hsl(348, 100%, 68%);
+  background-image: url('./images/icon-study.svg');
+}
+.green, .exercise{
+  background-color: hsl(145, 58%, 55%);
+  background-image: url('./images/icon-exercise.svg');
+}
+.purple, .social{
+  background-color: hsl(264, 64%, 52%);
+  background-image: url('./images/icon-social.svg');
+}
+.yellow, .self{
+  background-color: hsl(43, 84%, 65%);
+  background-image: url('./images/icon-self-care.svg');
+}
 
+
+@media screen and (max-width:710px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30px;
+    gap: 30px;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .profile{
+    flex-direction: row;
+    padding-bottom: 20px;
+    justify-content: center;
+    gap: 50px;
+  }
+  .period{
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .time{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
